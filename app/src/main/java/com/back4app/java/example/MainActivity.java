@@ -18,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId(getString(R.string.parse_app_id))
-                .clientKey(getString(R.string.parse_client_key))
-                .server(getString(R.string.parse_server_url))
-                .build());
 
         TextView textView = findViewById(R.id.textView);
         ParseObject firstObject = new  ParseObject("FirstClass");
