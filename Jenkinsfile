@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/sukahermawan/Lab', branch: 'main'
+                git url: 'https://github.com/sukahermawan/Lab', branch: 'master'
             }
         }
         stage('Build') {
