@@ -1,7 +1,7 @@
 pipeline {
     agent any  // Use any available agent or node
 
-    environment {
+    //environment {
         // Define any environment variables you need here
         // For example, JAVA_HOME for Java projects
         // JAVA_HOME = 'C:\\Program Files\\Java\\jdk-11'
