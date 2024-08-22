@@ -11,43 +11,39 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Example for a Maven build
-                // Adjust this step according to your project's build tool (e.g., Gradle, Ant, etc.)
+                // Run the Maven build command
                 bat 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
-                // Example for running tests
-                // Adjust this step according to your project's testing framework
+                // Run the Maven test command
                 bat 'mvn test'
             }
         }
 
         stage('Deploy') {
             steps {
-                // Example for deployment
-                // Adjust this step according to your deployment process
+                // Placeholder for deployment steps
                 bat 'echo "Deploying application..."'
-                // You can add deployment scripts or commands here
             }
         }
     }
 
     post {
         always {
-            // Actions that will always be executed, such as cleanup
+            // Actions that will always be executed
             echo 'This will always run after the stages'
         }
 
         success {
-            // Actions that will be executed if the build succeeds
+            // Actions if the build succeeds
             echo 'Build succeeded!'
         }
 
         failure {
-            // Actions that will be executed if the build fails
+            // Actions if the build fails
             echo 'Build failed.'
         }
     }
