@@ -1,12 +1,6 @@
 pipeline {
     agent any  // Use any available agent or node
 
-    //environment {
-        // Define any environment variables you need here
-        // For example, JAVA_HOME for Java projects
-        // JAVA_HOME = 'C:\\Program Files\\Java\\jdk-11'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -57,4 +51,4 @@ pipeline {
             echo 'Build failed.'
         }
     }
-
+}
